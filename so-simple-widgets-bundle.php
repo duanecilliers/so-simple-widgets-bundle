@@ -18,6 +18,7 @@ if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 		function __construct() {
 
 			add_filter( 'siteorigin_widgets_form_options_sow-button', array( $this, 'extend_button_form' ), 10, 2 );
+			add_filter( 'siteorigin_widgets_form_options_sow-cta', array( $this, 'extend_cta_form' ), 10, 2 );
 			add_filter( 'siteorigin_widgets_form_options_sow-headline', array( $this, 'extend_headline_form' ), 10, 2 );
 		}
 
@@ -29,6 +30,16 @@ if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 				unset( $form_options['design']['fields']['text_color'] );
 				unset( $form_options['design']['fields']['hover'] );
 				unset( $form_options['design']['fields']['rounding'] );
+			}
+
+			return $form_options;
+		}
+
+		function extend_cta_form( $form_options, $widget ) {
+
+			if ( isset( $form_options['design']['fields'] ) ) {
+				unset( $form_options['design']['fields']['background_color'] );
+				unset( $form_options['design']['fields']['border_color'] );
 			}
 
 			return $form_options;
