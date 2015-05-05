@@ -21,6 +21,7 @@ if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 			add_filter( 'siteorigin_widgets_form_options_sow-features', array( $this, 'extend_features_form' ), 10, 2 );
 			add_filter( 'siteorigin_widgets_form_options_sow-headline', array( $this, 'extend_headline_form' ), 10, 2 );
 			add_filter( 'siteorigin_widgets_form_options_sow-price-table', array( $this, 'extend_price_table_form' ), 10, 2 );
+			add_filter( 'siteorigin_widgets_form_options_sow-slider', array( $this, 'extend_slider_form' ), 10, 2 );
 		}
 
 		function extend_button_form( $form_options, $widget ) {
@@ -82,6 +83,19 @@ if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 			}
 			if ( isset( $form_options['featured_button_color'] ) ) {
 				unset( $form_options['featured_button_color'] );
+			}
+			return $form_options;
+		}
+
+		function extend_slider_form( $form_options, $widget ) {
+			if ( isset( $form_options['nav_color_hex'] ) ) {
+				unset( $form_options['nav_color_hex'] );
+			}
+			if ( isset( $form_options['nav_style'] ) ) {
+				unset( $form_options['nav_style'] );
+			}
+			if ( isset( $form_options['nav_size'] ) ) {
+				unset( $form_options['nav_size'] );
 			}
 			return $form_options;
 		}
