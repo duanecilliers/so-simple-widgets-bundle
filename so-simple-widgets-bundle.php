@@ -11,9 +11,6 @@ License: GPL3
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 */
 
-if ( ! class_exists( 'SiteOrigin_Widget' ) )
-	return;
-
 if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 
 	class SO_Simple_Widget_Bundle {
