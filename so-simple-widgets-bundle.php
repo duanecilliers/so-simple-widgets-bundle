@@ -22,6 +22,7 @@ if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 			add_filter( 'siteorigin_widgets_form_options_sow-headline', array( $this, 'extend_headline_form' ), 10, 2 );
 			add_filter( 'siteorigin_widgets_form_options_sow-price-table', array( $this, 'extend_price_table_form' ), 10, 2 );
 			add_filter( 'siteorigin_widgets_form_options_sow-slider', array( $this, 'extend_slider_form' ), 10, 2 );
+			add_filter( 'siteorigin_widgets_form_options_sow-social-media-buttons', array( $this, 'extend_social_media_form' ), 10, 2 );
 		}
 
 		function extend_button_form( $form_options, $widget ) {
@@ -96,6 +97,14 @@ if ( ! class_exists( 'SO_Simple_Widget_Bundle' ) ) {
 			}
 			if ( isset( $form_options['nav_size'] ) ) {
 				unset( $form_options['nav_size'] );
+			}
+			return $form_options;
+		}
+
+		function extend_social_media_form( $form_options, $widget ) {
+			if ( isset( $form_options['design']['fields'] ) ) {
+				unset( $form_options['design']['fields']['hover'] );
+				unset( $form_options['design']['fields']['rounding'] );
 			}
 			return $form_options;
 		}
