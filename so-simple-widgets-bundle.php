@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: SiteOrigin Simple Widgets Bundle
-Description: Removes design options from widget forms. Useful when designing client sites and you don't want to give them too much control over design.
+Description: Removes design options from SiteOrigin Widgets Bundle widget forms. Useful when designing client sites and you don't want to give them too much control over design.
 Version: 1.0.0
 Author: Duane Cilliers
 Author URI: http://duane.co.za
