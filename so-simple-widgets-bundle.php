@@ -3,7 +3,7 @@
 /*
 Plugin Name: SiteOrigin Simple Widgets Bundle
 Description: Removes certain design options from widgets SiteOrigin's Widgets Bundle. Useful when designing sites for clients and you don't want to allow complete control over widgets.
-Version: 1.0.0
+Version: 0.0.1
 Author: Duane Cilliers
 Author URI: http://duane.co.za
 Plugin URI: http://duane.co.za/plugins/so-simple-widgets-bundle/

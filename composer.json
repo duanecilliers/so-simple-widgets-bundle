@@ -1,0 +1,18 @@
+{
+  "name": "duanecilliers/so-simple-widgets-bundle",
+  "type": "wordpress-plugin",
+  "description": "Removes certain design options from widgets SiteOrigin's Widgets Bundle. Useful when designing sites for clients and you don't want to allow complete control over widgets.",
+  "keywords": ["wordpress", "Site Origin", "Widgets"],
+  "homepage": "https://github.com/duanecilliers/so-simple-widgets-bundle",
+  "license": "GPL-3.0",
+  "version": "0.0.1",
+  "require": {
+    "php": ">=5.3"
+  },
+  "authors": [
+    {
+      "name": "Duane Cilliers",
+      "email": "hello@duane.co.za"
+    }
+  ]
+}
